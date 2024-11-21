@@ -1,0 +1,313 @@
+/* new styls */
+.library-editor-block a, a.cp-connect-link, a.cp_button-connect {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none!important;
+}
+.library-editor-block a:focus, a.cp-connect-link:focus, a.cp_button-connect:focus {
+    outline: none;
+    box-shadow: none;
+}
+.cp_button {
+    padding: 5px 15px;
+    display: inline-block;
+    background: white;
+    border: 1px solid #007cba;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.cp_embed-wrapper {
+    border: 1px solid #137fc2;
+    padding: 40px 55px;
+}
+.wp-cp_embed_wrapper iframe{
+	width:100%;
+	height:100%;
+	aspect-ratio:16/9;
+}
+.cp_embed-wrapper--view{
+    padding: 40px 55px;
+    border:none;
+}
+.cp_embed-wrapper--view figure{
+    margin:0;
+}
+.library-editor-block .library-editor-block__iframe{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    z-index: 11;
+    max-width: 100%;
+    max-height: 100vh;
+}
+.cp_embed-wrapper figure{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+.cp-rendered-iframe{
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+}
+.cp-components-toolbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.cp_logedin-block{
+    border: 2px solid #1483c6;
+    padding: 10px 20px;
+}
+.cp_hide {
+    display: none!important;
+}
+.cp_embed-layer {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.cp_loader {
+    padding: 10px 50px;
+    font-size: 16px;
+}
+.cp_embeded {
+    padding: 0;
+}
+.gallerydemo{
+    width: 100%;
+}
+.cp-import-asset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+}
+/* .library-editor-block {
+    height: 600px;
+    margin-top: 100px
+} */
+.cp_insert-from-cincopa {
+    display: flex;
+    gap: 20px;
+}
+.library-editor-block  .insert-short-code {
+    flex-direction: column;
+    max-width: 350px;
+    height: auto;
+    border: 1px solid #B2D7EB;
+    background-color: #fff;
+    margin-top: 6px;
+    margin-left: 25%;
+}
+.cp-insert-from-cincopa-cnt {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cp_button-insert-from-cincopa {
+    background-color: #007ABF;
+    color: #fff;
+}
+.library-editor-block .cp-import-from-cincopa-input {
+    width: 200px;
+    height: 30px;
+    border-color: #007cba;
+}
+.insert-short-code-header {
+    background-color: #B2D7EB;
+}
+.insert-short-code-header::before {
+    content: "";
+    display: block;
+    background-image: url("//wwwcdn.cincopa.com/_cms/design18/images/cincopa_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 90px;
+    height: 24px;
+    margin: 20px;
+}
+.library-editor-block-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.cp-incorrect-token {
+    display: none;
+}
+.library-editor-block-disabled .cp-incorrect-token {
+    display: block;
+}
+.cp_button-block {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.insert-short-code-disabled .insert-short-code-disabled-asset {
+    opacity: 0.5;
+    pointer-events: none;
+}
+/* .insert-short-code-disabled .cp_button-insert-from-cincopa {
+    opacity: 0.5;
+    pointer-events: none;
+} */
+.cp_button-insert-from-cincopa:hover {
+    background: #007ABF;
+    color: #fff;
+}
+.cp_button-connect:hover {
+    color: #fff;
+}
+.cp_button-connect {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #007ABF;
+} 
+.library-editor-block__iframe-cnt {
+    display: flex;
+}
+.library-editor-block__iframe-cnt iframe{
+    width: 100%;
+}
+.library-editor-close-button {
+    position: absolute;
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0086CF;
+    width: 40px;
+    height: 40px;
+    /* top: 64px;
+    right: -26px; */
+    cursor: pointer;
+    transform: translateY(-100%);
+    right: -55px
+}
+.library-editor-close-button img {
+    max-width: 20px;
+    height: 20px;
+}
+.insert-short-code-header .library-editor-close-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+}
+.token-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: calc(50% - 250px);
+    background-color: #fff;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 2px #888888;
+    padding: 4px;
+}
+.token-popup .token-popup-header {
+    width: 100%;
+}
+.token-popup .token-popup-header-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    cursor: pointer;
+}
+.token-popup p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.cp-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.cp_insert-from-cincopa-title {
+    position: relative;
+    display: flex;
+    font-size: 24px;
+}
+.cp_insert-from-cincopa-title::before {
+    position: absolute;
+    top: 6px;
+    left: -46px;
+    display: block;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-image: url("//wwwcdn.cincopa.com/_cms/design18/images/cincopa_logo_circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cp_insert-from-cincopa-subtitle {
+    font-size: 13px;
+}
+.cp-connecting-cnt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #135e96;
+}
+.cp-connecting-cnt p {
+    color: #000;
+    font-weight: 400;
+    margin: 18px;
+    text-align: left;
+}
+.cp_insert-from-cincopa-image {
+    width: 20px;
+    height: 20px;
+}
+.block-editor-block-inspector .block-editor-block-card {
+    padding-bottom: 0;
+}
+.block-editor-block-card__title {
+    line-height: 16px!important;
+    max-width: 150px;
+}
+.cp_insert-from-cincopa .cp_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    width: 185px;
+    height: 36px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.insert-short-code .cp-connect-link {
+    position: relative;
+    top: -20px;
+    left: 130px;
+    font-size: 16px;
+}

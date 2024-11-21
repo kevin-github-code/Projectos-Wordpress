@@ -1,0 +1,250 @@
+@CHARSET "UTF-8";
+
+.cincopa-gallery-block {
+	position: absolute;
+	top: -9999px;
+
+	background-color: #fff;
+	border-color: #dfdfdf;
+	-webkit-box-shadow: 2px 3px 6px rgba(0,0,0,0.4);
+	box-shadow: 2px 3px 6px rgba(0,0,0,0.4);
+
+	z-index: 1000;
+	
+	padding: 2px;
+	min-width: 100px;
+	min-height: 30px;
+
+	max-height: 600px;
+	resize: both;
+	overflow: auto;
+	display: flex;
+}
+.cincopa-gallery-block  > iframe {
+	flex: 1;
+}
+
+.wp-cp_embed_wrapper iframe{
+	width:100%;
+	height:100%;
+	aspect-ratio:16/9;
+}
+
+.cincopa-gallery-block-visible {
+	top: 25px;
+	left: 175px;
+}
+	
+.cincopa-gallery-item {
+	cursor: pointer;
+	padding: 0px 10px 0px 10px;
+}
+
+.cincopa-gallery-item:hover, .cincopa-gallery-item:focus {
+	background-color: #eaf2fa;
+	color: #333;
+}
+.cincopa-login {
+	padding: 10px;
+}
+.cincopa-gallery-block .cincopa-login a{
+	  color: #0073aa;
+    text-decoration: underline;
+}
+
+
+/* #cincopa_button {
+	height: 24px;
+	box-sizing: border-box;
+	vertical-align: top;
+
+	border: 1px solid #bbb;
+	-webkit-border-radius: 3px;
+	-webkit-appearance: none;
+	border-radius: 3px;
+
+	background-color: #eee;
+	background-image: -webkit-gradient(linear,left bottom,left top,from(#e5e5e5),to(#fff));
+	background-image: -webkit-linear-gradient(bottom,#e5e5e5,#fff);
+	background-image: -moz-linear-gradient(bottom,#e5e5e5,#fff);
+	background-image: -o-linear-gradient(bottom,#e5e5e5,#fff);
+	background-image: linear-gradient(to top,#e5e5e5,#fff);
+
+	cursor: pointer;
+}
+#cincopa_button:hover {
+	border-color: rgb(153, 153, 153);
+}
+#cincopa_button.pressed {
+	border-color: #999 #ccc #ccc #999;
+	background: #eee;
+	background-image: -webkit-gradient(linear,left bottom,left top,from(#f6f6f6),to(#e3e3e3));
+	background-image: -webkit-linear-gradient(bottom,#f6f6f6,#e3e3e3);
+	background-image: -moz-linear-gradient(bottom,#f6f6f6,#e3e3e3);
+	background-image: -o-linear-gradient(bottom,#f6f6f6,#e3e3e3);
+	background-image: linear-gradient(to top,#f6f6f6,#e3e3e3);		
+} */
+#cincopa_button, #cincopa_button .first, #cincopa_button .last, #cincopa_button a {
+	display: inline-block;
+}
+
+#cincopa_button div.first {
+	height: 22px;
+}
+#cincopa_button div.first img {
+	margin-top: 5px;
+	margin-left: 2px;
+}
+#cincopa_button div.last {
+	background-image: url("down_arrow.gif");
+	background-position: 1px 2px;
+	background-repeat: no-repeat;
+	border-left: 1px solid #bbb;
+	width: 12px;
+	height: 22px;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+ .cp-library-editor{
+	min-width: 400px;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100vh;
+}
+/* For Elementor Addon*/
+
+#elementor-editor-wrapper .cincopa-gallery-block-visible {
+	position: fixed;
+    top: 25%!important;
+    left: calc(50% - 250px) !important;
+	width: 800px;
+}
+.elementor-control-login_cincopa button,
+.elementor-control-insert_cincopa button,
+.elementor-control-install_plugin_cincopa button {
+	background: #37B3FF!important;
+    border-radius: 10px 0px;
+    border: 2px solid #37B3FF;
+    padding: 0 15px;
+    font-size: 13px;
+    font-weight: 700!important;
+    line-height: 16px;
+    height: 32px!important;
+    letter-spacing: 1.2px;
+    transition: all .8s;
+	text-transform: inherit;
+}
+.elementor-control-login_cincopa button:hover,
+.elementor-control-insert_cincopa button:hover,
+.elementor-control-install_plugin_cincopa button:hover,
+.elementor-control-login_cincopa button:focus,
+.elementor-control-insert_cincopa button:focus,
+.elementor-control-install_plugin_cincopa button:focus {
+	border: 2px solid #076497!important;
+	background: #076497!important;
+	box-shadow: none!important;
+}
+.elementor-control-cincopa_gallery_fid textarea {
+	resize: none;
+	height: 30px;
+	border-radius: 4px;
+	font-size: 15px;
+}
+/* For Elementor Addon*/
+
+/* For WPBakery Addon*/
+.vc_ui-panel-content-container.cincopa-iframe-visible {
+    min-height: 700px;
+}
+.cincopa-iframe-visible .cincopa-gallery-block-visible {
+	top: 60px!important;
+	left: 13px!important;
+}
+.btn_insert_from_cincopa,
+.btn_login_cincopa {
+	background: #37B3FF!important;
+    border-radius: 10px 0px;
+    border: 2px solid #37B3FF;
+	color: #fff;
+    padding: 0 15px;
+    font-size: 13px;
+    font-weight: 700!important;
+    line-height: 16px;
+    height: 40px!important;
+	text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: all .8s;
+	cursor: pointer;
+}
+.btn_insert_from_cincopa:hover,
+.btn_login_cincopa:hover
+.btn_insert_from_cincopa:focus,
+.btn_login_cincopa:focus {
+	border: 2px solid #076497!important;
+	background: #076497!important;
+	box-shadow: none!important;
+}
+/* For WPBakery Addon*/
+
+/* For Oxygen Addon*/
+.oxygen-oxy-cincopa-oxy-cincopa_insert_btn,
+.oxygen-oxy-cincopa-oxy-cincopa_login_btn {
+	background: #37B3FF!important;
+    border-radius: 10px 0px;
+    border: 2px solid #37B3FF;
+	color: #fff;
+    padding: 6px 15px;
+    font-size: 12px;
+    font-weight: 700!important;
+    line-height: 16px;
+    height: 32px!important;
+	text-transform: uppercase;
+	text-align: center;
+    letter-spacing: 1.2px;
+    transition: all .8s;
+	cursor: pointer;
+}
+.oxygen-oxy-cincopa-oxy-cincopa_insert_btn:hover, 
+.oxygen-oxy-cincopa-oxy-cincopa_login_btn:hover,
+.oxygen-oxy-cincopa-oxy-cincopa_insert_btn:focus,
+.oxygen-oxy-cincopa-oxy-cincopa_login_btn:focus {
+	border: 2px solid #076497!important;
+	background: #076497!important;
+	box-shadow: none!important;
+}
+/* For Oxygen Addon*/
+.elementor-control-field .elementor-control-input-wrapper {
+	margin: auto;
+}
+.elementor-control-field .elementor-control-input-wrapper button.elementor-button {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    width: 190px;
+    height: 40px!important;
+    line-height: 18px;
+    font-weight: 700;
+	border-radius: 10px;
+	background-color: #007ABF!important;
+    color: #fff;
+}
+.elementor-controls .elementor-control-insert_cincopa {
+	border-bottom: 1px solid black;
+}
+@media screen and (max-width: 1080px) {
+	#elementor-editor-wrapper .cincopa-gallery-block-visible {
+		max-width: 500px;
+		left: 10%;
+	}
+}
+@media screen and (max-width: 670px) {
+	#elementor-editor-wrapper .cincopa-gallery-block-visible {
+		width: 100%;
+		max-width: 100%;
+		left: 0 !important;
+		margin: 10px;;
+	}
+}
